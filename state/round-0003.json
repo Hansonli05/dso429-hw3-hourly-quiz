@@ -1,0 +1,102 @@
+{
+  "q1": {
+    "method": "rule:fx",
+    "hash": "d72f5272b926"
+  },
+  "q2": {
+    "method": "rule:revenue",
+    "hash": "8b787ee91327"
+  },
+  "q3": {
+    "method": "rule:compound",
+    "hash": "0b9e8d2f084d"
+  },
+  "q4": {
+    "method": "rule:compound",
+    "hash": "7dc04d8d6808"
+  },
+  "q5": {
+    "method": "rule:gross_margin",
+    "hash": "fddcfb31b001"
+  },
+  "q6": {
+    "method": "rule:break_even",
+    "hash": "af42532a3164"
+  },
+  "q7": {
+    "method": "rule:gross_margin",
+    "hash": "7ed8e754209f"
+  },
+  "q8": {
+    "method": "rule:compound",
+    "hash": "2d018c53834e"
+  },
+  "q9": {
+    "method": "rule:fx",
+    "hash": "266a1ebd9044"
+  },
+  "q10": {
+    "method": "rule:pct_change",
+    "hash": "8744cb46235c"
+  },
+  "q11": {
+    "method": "rule:weighted_avg",
+    "hash": "208e0229bbe7"
+  },
+  "q12": {
+    "method": "rule:discount",
+    "hash": "ce873e7a6a30"
+  },
+  "q13": {
+    "method": "rule:fx",
+    "hash": "cd55735604de"
+  },
+  "q14": {
+    "method": "rule:compound",
+    "hash": "658c041eecf5"
+  },
+  "q15": {
+    "method": "rule:probability",
+    "hash": "4eafaae0956b"
+  },
+  "q16": {
+    "method": "rule:pct_change",
+    "hash": "969b3274007c"
+  },
+  "q17": {
+    "method": "rule:pct_change",
+    "hash": "918b8188a734"
+  },
+  "q18": {
+    "method": "rule:weighted_avg",
+    "hash": "3c617773a5fa"
+  },
+  "q19": {
+    "method": "rule:fx",
+    "hash": "888fd83aec1f"
+  },
+  "q20": {
+    "method": "rule:pct_change",
+    "hash": "c21852825651"
+  },
+  "q21": {
+    "method": "rule:weighted_avg",
+    "hash": "2835a770141f"
+  },
+  "q22": {
+    "method": "rule:weighted_avg",
+    "hash": "cad31216e22a"
+  },
+  "q23": {
+    "method": "rule:gross_margin",
+    "hash": "b86a31876564"
+  },
+  "q24": {
+    "method": "rule:fx",
+    "hash": "2c27ff48e244"
+  },
+  "q25": {
+    "method": "rule:fx",
+    "hash": "6a169d1c4642"
+  }
+}
