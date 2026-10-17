@@ -293,6 +293,8 @@ def set_answer(rid, k, letter):
     out = ANSWERS / f"round-{rid:04d}.json"
     meta = STATE / f"round-{rid:04d}.json"
     letter = letter.strip().upper()
+    k = k.strip().lower()
+    k = k if k.startswith("q") else f"q{k}"                     # accept "7" as well as "q7"
     if letter not in LETTERS or not re.fullmatch(r"q\d+", k):
         sys.exit(f"bad answer {k}={letter}: use e.g. --set 49 q7 C")
     if not out.exists():
