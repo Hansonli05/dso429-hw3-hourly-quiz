@@ -211,19 +211,20 @@ def parse_rounds(text):
 def load_questions(path):
     if path:
         return parse_rounds(pathlib.Path(path).read_text(encoding="utf-8"))
-    best = None
+    best, errors = None, []
     for url, headers in QUESTION_SOURCES:
         req = urllib.request.Request(url, headers={**headers, "User-Agent": "dso429-quizbot"})
         try:
             with urllib.request.urlopen(req, timeout=60) as resp:
                 rounds = parse_rounds(resp.read().decode("utf-8"))
         except Exception as e:                                  # 403 in the sandbox, network blips
-            print(f"could not fetch {url}: {e}", file=sys.stderr)
+            errors.append(f"{url}: {e}")
             continue
         if best is None or sum(map(len, rounds.values())) > sum(map(len, best.values())):
             best = rounds
     if best is None:
-        sys.exit("could not download questions.csv from any source")
+        sys.exit("could not download questions.csv from any source:\n  " + "\n  ".join(errors))
+    print(f"downloaded questions.csv: {len(best)} rounds, newest is round {max(best)}")
     return best
 
 
